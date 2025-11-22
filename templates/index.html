@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Simulator Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚦 Traffic Simulator</h1>
+            <div class="controls">
+                <button id="startBtn" onclick="controlSim('start')">Start</button>
+                <button id="stopBtn" onclick="controlSim('stop')">Stop</button>
+                <button id="resetBtn" onclick="controlSim('reset')">Reset</button>
+                <span id="status">Status: Stopped</span>
+                <span id="step">Step: 0</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="intersections-grid" id="intersections">
+                <!-- Intersections will be rendered here -->
+            </div>
+            
+            <div class="charts-panel">
+                <div class="chart-container">
+                    <canvas id="waitChart"></canvas>
+                </div>
+                <div class="info-panel">
+                    <h3>System Info</h3>
+                    <p>Last Action: <span id="lastAction">None</span></p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,2802 @@
+[
+  {
+    "step": 1,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 1,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 2,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 2,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 3,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 3,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 4,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 4,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 5,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 5,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 6,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 6,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 7,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 7,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 8,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 8,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 9,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 9,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 10,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 10,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 2.0
+  },
+  {
+    "step": 11,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 0.0
+  },
+  {
+    "step": 11,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 2.0
+  },
+  {
+    "step": 12,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 1.0
+  },
+  {
+    "step": 12,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 2.0
+  },
+  {
+    "step": 13,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 1.0
+  },
+  {
+    "step": 13,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 1.6666666666666667
+  },
+  {
+    "step": 14,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 1.0
+  },
+  {
+    "step": 14,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 1.25
+  },
+  {
+    "step": 15,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 6.5
+  },
+  {
+    "step": 15,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 1.25
+  },
+  {
+    "step": 16,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 8.0
+  },
+  {
+    "step": 16,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 1.25
+  },
+  {
+    "step": 17,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 8.0
+  },
+  {
+    "step": 17,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 1.25
+  },
+  {
+    "step": 18,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 8.5
+  },
+  {
+    "step": 18,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 1.25
+  },
+  {
+    "step": 19,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 8.5
+  },
+  {
+    "step": 19,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 1.25
+  },
+  {
+    "step": 20,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 8.5
+  },
+  {
+    "step": 20,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 3.6666666666666665
+  },
+  {
+    "step": 21,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 8.5
+  },
+  {
+    "step": 21,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 3.857142857142857
+  },
+  {
+    "step": 22,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 8.5
+  },
+  {
+    "step": 22,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 3.375
+  },
+  {
+    "step": 23,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 8.5
+  },
+  {
+    "step": 23,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 3.375
+  },
+  {
+    "step": 24,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 8.5
+  },
+  {
+    "step": 24,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 3.6666666666666665
+  },
+  {
+    "step": 25,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 8.5
+  },
+  {
+    "step": 25,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 3.6666666666666665
+  },
+  {
+    "step": 26,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 8.5
+  },
+  {
+    "step": 26,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 3.6666666666666665
+  },
+  {
+    "step": 27,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 8.5
+  },
+  {
+    "step": 27,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 3.6666666666666665
+  },
+  {
+    "step": 28,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 8.5
+  },
+  {
+    "step": 28,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 3.6666666666666665
+  },
+  {
+    "step": 29,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 8.5
+  },
+  {
+    "step": 29,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 3.6666666666666665
+  },
+  {
+    "step": 30,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 9.2
+  },
+  {
+    "step": 30,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.2
+  },
+  {
+    "step": 31,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 5,
+    "avg_waiting_time": 9.2
+  },
+  {
+    "step": 31,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.7272727272727275
+  },
+  {
+    "step": 32,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 9.333333333333334
+  },
+  {
+    "step": 32,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.833333333333333
+  },
+  {
+    "step": 33,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 9.333333333333334
+  },
+  {
+    "step": 33,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.833333333333333
+  },
+  {
+    "step": 34,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 9.333333333333334
+  },
+  {
+    "step": 34,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.833333333333333
+  },
+  {
+    "step": 35,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 9.571428571428571
+  },
+  {
+    "step": 35,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.833333333333333
+  },
+  {
+    "step": 36,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 9.571428571428571
+  },
+  {
+    "step": 36,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.461538461538462
+  },
+  {
+    "step": 37,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 5,
+    "avg_waiting_time": 9.571428571428571
+  },
+  {
+    "step": 37,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.461538461538462
+  },
+  {
+    "step": 38,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 9.5
+  },
+  {
+    "step": 38,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.461538461538462
+  },
+  {
+    "step": 39,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 7.9
+  },
+  {
+    "step": 39,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.461538461538462
+  },
+  {
+    "step": 40,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 7.454545454545454
+  },
+  {
+    "step": 40,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.5
+  },
+  {
+    "step": 41,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 7.454545454545454
+  },
+  {
+    "step": 41,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.6
+  },
+  {
+    "step": 42,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 7.454545454545454
+  },
+  {
+    "step": 42,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.6
+  },
+  {
+    "step": 43,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 5,
+    "avg_waiting_time": 7.454545454545454
+  },
+  {
+    "step": 43,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.3125
+  },
+  {
+    "step": 44,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 5,
+    "avg_waiting_time": 7.454545454545454
+  },
+  {
+    "step": 44,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.3125
+  },
+  {
+    "step": 45,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 8.0
+  },
+  {
+    "step": 45,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.3125
+  },
+  {
+    "step": 46,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 8.428571428571429
+  },
+  {
+    "step": 46,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.3125
+  },
+  {
+    "step": 47,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 8.428571428571429
+  },
+  {
+    "step": 47,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.3125
+  },
+  {
+    "step": 48,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 8.266666666666667
+  },
+  {
+    "step": 48,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.0588235294117645
+  },
+  {
+    "step": 49,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 8.266666666666667
+  },
+  {
+    "step": 49,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.0588235294117645
+  },
+  {
+    "step": 50,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 8.266666666666667
+  },
+  {
+    "step": 50,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.0588235294117645
+  },
+  {
+    "step": 51,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 8.266666666666667
+  },
+  {
+    "step": 51,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.333333333333333
+  },
+  {
+    "step": 52,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 6,
+    "avg_waiting_time": 8.266666666666667
+  },
+  {
+    "step": 52,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.333333333333333
+  },
+  {
+    "step": 53,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 6,
+    "avg_waiting_time": 7.875
+  },
+  {
+    "step": 53,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.526315789473684
+  },
+  {
+    "step": 54,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 6,
+    "avg_waiting_time": 7.875
+  },
+  {
+    "step": 54,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.526315789473684
+  },
+  {
+    "step": 55,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 5,
+    "avg_waiting_time": 7.588235294117647
+  },
+  {
+    "step": 55,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.526315789473684
+  },
+  {
+    "step": 56,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 5,
+    "avg_waiting_time": 7.588235294117647
+  },
+  {
+    "step": 56,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.526315789473684
+  },
+  {
+    "step": 57,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 5,
+    "avg_waiting_time": 7.588235294117647
+  },
+  {
+    "step": 57,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.526315789473684
+  },
+  {
+    "step": 58,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 6,
+    "avg_waiting_time": 7.588235294117647
+  },
+  {
+    "step": 58,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.526315789473684
+  },
+  {
+    "step": 59,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 6,
+    "avg_waiting_time": 7.588235294117647
+  },
+  {
+    "step": 59,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.526315789473684
+  },
+  {
+    "step": 60,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 5,
+    "avg_waiting_time": 8.11111111111111
+  },
+  {
+    "step": 60,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.65
+  },
+  {
+    "step": 61,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 6,
+    "avg_waiting_time": 8.263157894736842
+  },
+  {
+    "step": 61,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.619047619047619
+  },
+  {
+    "step": 62,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 5,
+    "avg_waiting_time": 8.428571428571429
+  },
+  {
+    "step": 62,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.619047619047619
+  },
+  {
+    "step": 63,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 8.391304347826088
+  },
+  {
+    "step": 63,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.619047619047619
+  },
+  {
+    "step": 64,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 8.391304347826088
+  },
+  {
+    "step": 64,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.619047619047619
+  },
+  {
+    "step": 65,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 8.391304347826088
+  },
+  {
+    "step": 65,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.619047619047619
+  },
+  {
+    "step": 66,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 8.391304347826088
+  },
+  {
+    "step": 66,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.619047619047619
+  },
+  {
+    "step": 67,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 8.391304347826088
+  },
+  {
+    "step": 67,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.619047619047619
+  },
+  {
+    "step": 68,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 8.291666666666666
+  },
+  {
+    "step": 68,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.619047619047619
+  },
+  {
+    "step": 69,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 8.291666666666666
+  },
+  {
+    "step": 69,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 4.619047619047619
+  },
+  {
+    "step": 70,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 8.291666666666666
+  },
+  {
+    "step": 70,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.590909090909091
+  },
+  {
+    "step": 71,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 8.291666666666666
+  },
+  {
+    "step": 71,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.583333333333333
+  },
+  {
+    "step": 72,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 8.291666666666666
+  },
+  {
+    "step": 72,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.583333333333333
+  },
+  {
+    "step": 73,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 8.291666666666666
+  },
+  {
+    "step": 73,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.583333333333333
+  },
+  {
+    "step": 74,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 8.291666666666666
+  },
+  {
+    "step": 74,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.583333333333333
+  },
+  {
+    "step": 75,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 8.291666666666666
+  },
+  {
+    "step": 75,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.583333333333333
+  },
+  {
+    "step": 76,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 8.56
+  },
+  {
+    "step": 76,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.583333333333333
+  },
+  {
+    "step": 77,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 8.846153846153847
+  },
+  {
+    "step": 77,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.583333333333333
+  },
+  {
+    "step": 78,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 8.846153846153847
+  },
+  {
+    "step": 78,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.583333333333333
+  },
+  {
+    "step": 79,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 9.037037037037036
+  },
+  {
+    "step": 79,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.583333333333333
+  },
+  {
+    "step": 80,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 8.714285714285714
+  },
+  {
+    "step": 80,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.44
+  },
+  {
+    "step": 81,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 8.714285714285714
+  },
+  {
+    "step": 81,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.44
+  },
+  {
+    "step": 82,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 8.714285714285714
+  },
+  {
+    "step": 82,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.346153846153846
+  },
+  {
+    "step": 83,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 8.413793103448276
+  },
+  {
+    "step": 83,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.185185185185185
+  },
+  {
+    "step": 84,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 8.413793103448276
+  },
+  {
+    "step": 84,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.185185185185185
+  },
+  {
+    "step": 85,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 8.133333333333333
+  },
+  {
+    "step": 85,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.185185185185185
+  },
+  {
+    "step": 86,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 8.133333333333333
+  },
+  {
+    "step": 86,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.185185185185185
+  },
+  {
+    "step": 87,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 8.133333333333333
+  },
+  {
+    "step": 87,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.185185185185185
+  },
+  {
+    "step": 88,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 5,
+    "avg_waiting_time": 8.133333333333333
+  },
+  {
+    "step": 88,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.185185185185185
+  },
+  {
+    "step": 89,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 5,
+    "avg_waiting_time": 8.133333333333333
+  },
+  {
+    "step": 89,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.185185185185185
+  },
+  {
+    "step": 90,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 8.225806451612904
+  },
+  {
+    "step": 90,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.206896551724138
+  },
+  {
+    "step": 91,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 8.030303030303031
+  },
+  {
+    "step": 91,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.1
+  },
+  {
+    "step": 92,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 8.030303030303031
+  },
+  {
+    "step": 92,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.1
+  },
+  {
+    "step": 93,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 8.030303030303031
+  },
+  {
+    "step": 93,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.0
+  },
+  {
+    "step": 94,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 8.029411764705882
+  },
+  {
+    "step": 94,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.0
+  },
+  {
+    "step": 95,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 8.029411764705882
+  },
+  {
+    "step": 95,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.0
+  },
+  {
+    "step": 96,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.8
+  },
+  {
+    "step": 96,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.0
+  },
+  {
+    "step": 97,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.8
+  },
+  {
+    "step": 97,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.0
+  },
+  {
+    "step": 98,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.8
+  },
+  {
+    "step": 98,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.0
+  },
+  {
+    "step": 99,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.8
+  },
+  {
+    "step": 99,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.0
+  },
+  {
+    "step": 100,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.583333333333333
+  },
+  {
+    "step": 100,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.125
+  },
+  {
+    "step": 101,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.583333333333333
+  },
+  {
+    "step": 101,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.181818181818182
+  },
+  {
+    "step": 102,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.583333333333333
+  },
+  {
+    "step": 102,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.181818181818182
+  },
+  {
+    "step": 103,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.583333333333333
+  },
+  {
+    "step": 103,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.181818181818182
+  },
+  {
+    "step": 104,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 7.583333333333333
+  },
+  {
+    "step": 104,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 4.181818181818182
+  },
+  {
+    "step": 105,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 7.657894736842105
+  },
+  {
+    "step": 105,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.0588235294117645
+  },
+  {
+    "step": 106,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 7.657894736842105
+  },
+  {
+    "step": 106,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.0588235294117645
+  },
+  {
+    "step": 107,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 7.657894736842105
+  },
+  {
+    "step": 107,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.0588235294117645
+  },
+  {
+    "step": 108,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.641025641025641
+  },
+  {
+    "step": 108,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.0588235294117645
+  },
+  {
+    "step": 109,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.55
+  },
+  {
+    "step": 109,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 3.942857142857143
+  },
+  {
+    "step": 110,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.55
+  },
+  {
+    "step": 110,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.111111111111111
+  },
+  {
+    "step": 111,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.55
+  },
+  {
+    "step": 111,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 4.0
+  },
+  {
+    "step": 112,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.55
+  },
+  {
+    "step": 112,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 4.078947368421052
+  },
+  {
+    "step": 113,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.55
+  },
+  {
+    "step": 113,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.925
+  },
+  {
+    "step": 114,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 7.55
+  },
+  {
+    "step": 114,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 3.925
+  },
+  {
+    "step": 115,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.390243902439025
+  },
+  {
+    "step": 115,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.8536585365853657
+  },
+  {
+    "step": 116,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.390243902439025
+  },
+  {
+    "step": 116,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.8536585365853657
+  },
+  {
+    "step": 117,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.390243902439025
+  },
+  {
+    "step": 117,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.8536585365853657
+  },
+  {
+    "step": 118,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.390243902439025
+  },
+  {
+    "step": 118,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.8536585365853657
+  },
+  {
+    "step": 119,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.390243902439025
+  },
+  {
+    "step": 119,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.8536585365853657
+  },
+  {
+    "step": 120,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.627906976744186
+  },
+  {
+    "step": 120,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.8536585365853657
+  },
+  {
+    "step": 121,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.627906976744186
+  },
+  {
+    "step": 121,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.023809523809524
+  },
+  {
+    "step": 122,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 7.5
+  },
+  {
+    "step": 122,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.023809523809524
+  },
+  {
+    "step": 123,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 7.5
+  },
+  {
+    "step": 123,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 4.023809523809524
+  },
+  {
+    "step": 124,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 7.5
+  },
+  {
+    "step": 124,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.9302325581395348
+  },
+  {
+    "step": 125,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 7.5
+  },
+  {
+    "step": 125,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.9302325581395348
+  },
+  {
+    "step": 126,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.5
+  },
+  {
+    "step": 126,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.9302325581395348
+  },
+  {
+    "step": 127,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.5
+  },
+  {
+    "step": 127,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.9302325581395348
+  },
+  {
+    "step": 128,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.5
+  },
+  {
+    "step": 128,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.9302325581395348
+  },
+  {
+    "step": 129,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.5
+  },
+  {
+    "step": 129,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.9302325581395348
+  },
+  {
+    "step": 130,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.5
+  },
+  {
+    "step": 130,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.909090909090909
+  },
+  {
+    "step": 131,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.377777777777778
+  },
+  {
+    "step": 131,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.8444444444444446
+  },
+  {
+    "step": 132,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.377777777777778
+  },
+  {
+    "step": 132,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.8444444444444446
+  },
+  {
+    "step": 133,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.377777777777778
+  },
+  {
+    "step": 133,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.8444444444444446
+  },
+  {
+    "step": 134,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.377777777777778
+  },
+  {
+    "step": 134,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.8444444444444446
+  },
+  {
+    "step": 135,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 7.413043478260869
+  },
+  {
+    "step": 135,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.8444444444444446
+  },
+  {
+    "step": 136,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 7.413043478260869
+  },
+  {
+    "step": 136,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.760869565217391
+  },
+  {
+    "step": 137,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 7.413043478260869
+  },
+  {
+    "step": 137,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.760869565217391
+  },
+  {
+    "step": 138,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 7.413043478260869
+  },
+  {
+    "step": 138,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.760869565217391
+  },
+  {
+    "step": 139,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 7.25531914893617
+  },
+  {
+    "step": 139,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.760869565217391
+  },
+  {
+    "step": 140,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 7.25531914893617
+  },
+  {
+    "step": 140,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.872340425531915
+  },
+  {
+    "step": 141,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.25531914893617
+  },
+  {
+    "step": 141,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.872340425531915
+  },
+  {
+    "step": 142,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.25531914893617
+  },
+  {
+    "step": 142,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.872340425531915
+  },
+  {
+    "step": 143,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 7.25531914893617
+  },
+  {
+    "step": 143,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.872340425531915
+  },
+  {
+    "step": 144,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.166666666666667
+  },
+  {
+    "step": 144,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.872340425531915
+  },
+  {
+    "step": 145,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.166666666666667
+  },
+  {
+    "step": 145,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.872340425531915
+  },
+  {
+    "step": 146,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.1020408163265305
+  },
+  {
+    "step": 146,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.872340425531915
+  },
+  {
+    "step": 147,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.1020408163265305
+  },
+  {
+    "step": 147,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.872340425531915
+  },
+  {
+    "step": 148,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.1020408163265305
+  },
+  {
+    "step": 148,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.872340425531915
+  },
+  {
+    "step": 149,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.1020408163265305
+  },
+  {
+    "step": 149,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.872340425531915
+  },
+  {
+    "step": 150,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.1
+  },
+  {
+    "step": 150,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.9375
+  },
+  {
+    "step": 151,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.1
+  },
+  {
+    "step": 151,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.9375
+  },
+  {
+    "step": 152,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.1
+  },
+  {
+    "step": 152,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.9375
+  },
+  {
+    "step": 153,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.1
+  },
+  {
+    "step": 153,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.9375
+  },
+  {
+    "step": 154,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.1
+  },
+  {
+    "step": 154,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.857142857142857
+  },
+  {
+    "step": 155,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.1
+  },
+  {
+    "step": 155,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.857142857142857
+  },
+  {
+    "step": 156,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.1
+  },
+  {
+    "step": 156,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.7058823529411766
+  },
+  {
+    "step": 157,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.1
+  },
+  {
+    "step": 157,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.7058823529411766
+  },
+  {
+    "step": 158,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.1
+  },
+  {
+    "step": 158,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 3.7058823529411766
+  },
+  {
+    "step": 159,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 6.96078431372549
+  },
+  {
+    "step": 159,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 3.6346153846153846
+  },
+  {
+    "step": 160,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 6.96078431372549
+  },
+  {
+    "step": 160,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 3.7037037037037037
+  },
+  {
+    "step": 161,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 6.96078431372549
+  },
+  {
+    "step": 161,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 3.7037037037037037
+  },
+  {
+    "step": 162,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 6.96078431372549
+  },
+  {
+    "step": 162,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 3.7037037037037037
+  },
+  {
+    "step": 163,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 6.96078431372549
+  },
+  {
+    "step": 163,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 3.7037037037037037
+  },
+  {
+    "step": 164,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 6.96078431372549
+  },
+  {
+    "step": 164,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 3.7037037037037037
+  },
+  {
+    "step": 165,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 7.0754716981132075
+  },
+  {
+    "step": 165,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 3.7037037037037037
+  },
+  {
+    "step": 166,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.0754716981132075
+  },
+  {
+    "step": 166,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 3.6363636363636362
+  },
+  {
+    "step": 167,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.0754716981132075
+  },
+  {
+    "step": 167,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 3.5714285714285716
+  },
+  {
+    "step": 168,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.0754716981132075
+  },
+  {
+    "step": 168,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 3.508771929824561
+  },
+  {
+    "step": 169,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.0754716981132075
+  },
+  {
+    "step": 169,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 3.508771929824561
+  },
+  {
+    "step": 170,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 6.944444444444445
+  },
+  {
+    "step": 170,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 3.6379310344827585
+  },
+  {
+    "step": 171,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 6.944444444444445
+  },
+  {
+    "step": 171,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 3.7
+  },
+  {
+    "step": 172,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 6.944444444444445
+  },
+  {
+    "step": 172,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 3.7704918032786887
+  },
+  {
+    "step": 173,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 6.944444444444445
+  },
+  {
+    "step": 173,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.7903225806451615
+  },
+  {
+    "step": 174,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 6.818181818181818
+  },
+  {
+    "step": 174,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.761904761904762
+  },
+  {
+    "step": 175,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 6.818181818181818
+  },
+  {
+    "step": 175,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.761904761904762
+  },
+  {
+    "step": 176,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 6.818181818181818
+  },
+  {
+    "step": 176,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.761904761904762
+  },
+  {
+    "step": 177,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 6.818181818181818
+  },
+  {
+    "step": 177,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.761904761904762
+  },
+  {
+    "step": 178,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 6.818181818181818
+  },
+  {
+    "step": 178,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.761904761904762
+  },
+  {
+    "step": 179,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 5,
+    "avg_waiting_time": 6.818181818181818
+  },
+  {
+    "step": 179,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.703125
+  },
+  {
+    "step": 180,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 6.982142857142857
+  },
+  {
+    "step": 180,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.703125
+  },
+  {
+    "step": 181,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.103448275862069
+  },
+  {
+    "step": 181,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.646153846153846
+  },
+  {
+    "step": 182,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.103448275862069
+  },
+  {
+    "step": 182,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.590909090909091
+  },
+  {
+    "step": 183,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 7.103448275862069
+  },
+  {
+    "step": 183,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.590909090909091
+  },
+  {
+    "step": 184,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 7.103448275862069
+  },
+  {
+    "step": 184,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.537313432835821
+  },
+  {
+    "step": 185,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 7.103448275862069
+  },
+  {
+    "step": 185,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 3.537313432835821
+  },
+  {
+    "step": 186,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 7.11864406779661
+  },
+  {
+    "step": 186,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 3.537313432835821
+  },
+  {
+    "step": 187,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 7.016393442622951
+  },
+  {
+    "step": 187,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 3.5
+  },
+  {
+    "step": 188,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 6.857142857142857
+  },
+  {
+    "step": 188,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 3.5
+  },
+  {
+    "step": 189,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 6.796875
+  },
+  {
+    "step": 189,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 3.449275362318841
+  },
+  {
+    "step": 190,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 1,
+    "avg_waiting_time": 6.796875
+  },
+  {
+    "step": 190,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.464788732394366
+  },
+  {
+    "step": 191,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 6.796875
+  },
+  {
+    "step": 191,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.464788732394366
+  },
+  {
+    "step": 192,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 6.796875
+  },
+  {
+    "step": 192,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.464788732394366
+  },
+  {
+    "step": 193,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 6.6923076923076925
+  },
+  {
+    "step": 193,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.4166666666666665
+  },
+  {
+    "step": 194,
+    "intersection_id": "INT_01",
+    "phase": "NS_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 6.6923076923076925
+  },
+  {
+    "step": 194,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.4166666666666665
+  },
+  {
+    "step": 195,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 4,
+    "avg_waiting_time": 6.6923076923076925
+  },
+  {
+    "step": 195,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.4166666666666665
+  },
+  {
+    "step": 196,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 6.742424242424242
+  },
+  {
+    "step": 196,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.4166666666666665
+  },
+  {
+    "step": 197,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 6.731343283582089
+  },
+  {
+    "step": 197,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.4166666666666665
+  },
+  {
+    "step": 198,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 6.731343283582089
+  },
+  {
+    "step": 198,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.4166666666666665
+  },
+  {
+    "step": 199,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 3,
+    "avg_waiting_time": 6.731343283582089
+  },
+  {
+    "step": 199,
+    "intersection_id": "INT_02",
+    "phase": "EW_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.4166666666666665
+  },
+  {
+    "step": 200,
+    "intersection_id": "INT_01",
+    "phase": "EW_GREEN",
+    "total_queue_length": 2,
+    "avg_waiting_time": 6.661764705882353
+  },
+  {
+    "step": 200,
+    "intersection_id": "INT_02",
+    "phase": "NS_GREEN",
+    "total_queue_length": 0,
+    "avg_waiting_time": 3.4166666666666665
+  }
+]
