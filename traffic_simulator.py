@@ -55,6 +55,19 @@ class Intersection:
         self.clearance_rate = clearance_rate # Vehicles per second per lane
         self.manual_control = manual_control
 
+    @property
+    def north_queue(self): return self.approaches['N'].get_queue_length()
+    @property
+    def south_queue(self): return self.approaches['S'].get_queue_length()
+    @property
+    def east_queue(self): return self.approaches['E'].get_queue_length()
+    @property
+    def west_queue(self): return self.approaches['W'].get_queue_length()
+    
+    @property
+    def current_green_lane(self):
+        return self.phases[self.current_phase_index]
+
     def step(self, current_time: int):
         """Executes one time step of the intersection logic."""
         self.phase_timer += 1
@@ -75,11 +88,6 @@ class Intersection:
         # Process departures for green lanes
         for lane_key in green_lanes:
             lane = self.approaches[lane_key]
-            # Probabilistic departure based on clearance rate
-            # For 1 sec step, if rate is 0.5, 50% chance to clear 1 car.
-            # If rate > 1, clear int(rate) and prob for remainder.
-            # Simple implementation: Accumulate clearance capacity or probabilistic.
-            # Let's use probabilistic for simplicity and < 1 rates.
             if random.random() < self.clearance_rate:
                 lane.remove_vehicle(current_time)
 
@@ -87,6 +95,22 @@ class Intersection:
         """Manually switches to the next phase."""
         self.current_phase_index = (self.current_phase_index + 1) % len(self.phases)
         self.phase_timer = 0
+        
+    def switch_light(self, direction: str = None):
+        """
+        Changes the green light. 
+        If direction is provided (e.g., 'NS' or 'EW'), it switches to that phase.
+        Otherwise it just toggles.
+        """
+        if direction:
+            if direction == 'NS' and self.phases[self.current_phase_index] != 'NS_GREEN':
+                self.current_phase_index = self.phases.index('NS_GREEN')
+                self.phase_timer = 0
+            elif direction == 'EW' and self.phases[self.current_phase_index] != 'EW_GREEN':
+                self.current_phase_index = self.phases.index('EW_GREEN')
+                self.phase_timer = 0
+        else:
+            self.switch_phase()
 
     def add_vehicle(self, approach: str, current_time: int):
         if approach in self.approaches:
@@ -105,7 +129,22 @@ class Intersection:
             'phase': self.phases[self.current_phase_index],
             'phase_timer': self.phase_timer,
             'queues': {k: v.get_queue_length() for k, v in self.approaches.items()},
-            'avg_waiting_time': avg_wait
+            'avg_waiting_time': avg_wait,
+            # Add specific queue keys for easier access if needed
+            'north_queue': self.north_queue,
+            'south_queue': self.south_queue,
+            'east_queue': self.east_queue,
+            'west_queue': self.west_queue
+        }
+
+    def get_status(self) -> Dict:
+        """Returns current queue lengths as requested."""
+        return {
+            'north_queue': self.north_queue,
+            'south_queue': self.south_queue,
+            'east_queue': self.east_queue,
+            'west_queue': self.west_queue,
+            'current_green_lane': self.current_green_lane
         }
 
 class TrafficSimulator:
@@ -139,3 +178,27 @@ class TrafficSimulator:
             self.step()
         if self.logger:
             self.logger.save_json()
+
+    # --- Tool Wrappers for Agents ---
+    def get_traffic_status(self, intersection_id: str) -> Dict:
+        """Returns current queue lengths for all lanes."""
+        for intersection in self.intersections:
+            if intersection.intersection_id == intersection_id:
+                return intersection.get_status()
+        return {"error": "Intersection not found"}
+
+    def execute_signal_change(self, intersection_id: str, action: str) -> str:
+        """Executes a signal change. Action can be 'HOLD' or 'SWITCH'."""
+        for intersection in self.intersections:
+            if intersection.intersection_id == intersection_id:
+                if action == "SWITCH":
+                    intersection.switch_light()
+                    return f"Signal SWITCHED for {intersection_id}"
+                elif action == "HOLD":
+                    return f"Signal HELD for {intersection_id}"
+                # Support directional switch if needed, e.g. "SWITCH_NS"
+                elif action.startswith("SWITCH_"):
+                    direction = action.split("_")[1]
+                    intersection.switch_light(direction)
+                    return f"Signal SWITCHED to {direction} for {intersection_id}"
+        return "Intersection not found or Invalid Action"

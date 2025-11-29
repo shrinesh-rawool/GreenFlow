@@ -1,60 +1,56 @@
 # Traffic Simulator Project Documentation
 
 ## Overview
-This project is a modular, extensible traffic simulation platform designed for testing multi-agent control strategies. It simulates intersections with discrete time steps, supporting custom agents for observation, control, and coordination.
+This project is a modular, extensible traffic simulation platform designed to demonstrate the effectiveness of AI-driven traffic control compared to static timers. It follows a structured 5-Phase architecture to separate simulation, agent logic, orchestration, and observability.
 
-## Architecture
+## Project Goal
+The primary goal is to create a "world" (simulation) where intelligent agents can observe traffic conditions and make real-time decisions to optimize flow, proving that dynamic control outperforms static timing.
 
-### Core Components (`traffic_simulator.py`)
-- **`Lane`**: Represents a single lane of traffic.
-    - **Queue**: Stores arrival times of vehicles.
-    - **Metrics**: Calculates current wait time (average of currently queued vehicles) and tracks total cleared vehicles.
-- **`Intersection`**: Manages four approaches (N, E, S, W).
-    - **Phases**: `NS_GREEN` and `EW_GREEN`.
-    - **Logic**: Handles phase switching (timer-based or manual) and vehicle departure (probabilistic clearance).
-    - **State**: Reports queue lengths, current phase, and average wait times.
-- **`TrafficSimulator`**: The main engine.
-    - **Time**: Discrete steps (1 step = 1 second).
-    - **Traffic Generation**: Poisson process for vehicle arrivals.
-    - **Execution**: Iterates through all intersections and steps them forward.
+## Architecture: The 5 Phases
 
-### Agents
-- **`ObserverAgent` (`observer_agent.py`)**:
-    - Runs in a background thread.
-    - Polls the simulator state at each step.
-    - Computes derived metrics (rolling average wait time, queue sums).
-    - Publishes state updates via a callback (JSON format).
-- **`ControllerAgent` (`controller_agent.py`)**:
-    - Subscribes to Observer updates.
-    - Implements rule-based control logic:
-        - **Switch**: If opposing queue is significantly larger.
-        - **Extend**: If current queue is long (unless advised otherwise).
-    - Sends actions (`SWITCH`) to the simulator.
-- **`CoordinatorAgent` (`coordinator_agent.py`)**:
-    - Monitors the global network state.
-    - Detects spillback (downstream congestion).
-    - Sends advisories (e.g., `avoid_extend`) to upstream Controller Agents to prevent gridlock.
+### Phase 1: The Foundation (Simulation & Tools)
+The core of the project is a robust Python-based discrete-time simulator.
+- **`TrafficIntersection` (in `traffic_simulator.py`)**: Acts as the "Real World". It holds the state of queues (`north_queue`, etc.) and phases.
+- **Tools**: The simulator exposes tool-like methods for agents:
+    - `get_traffic_status(intersection_id)`: Returns current queue lengths.
+    - `execute_signal_change(intersection_id, action)`: Switches or holds the light.
 
-### Dashboard
-- **Web Dashboard (Flask)**:
-    - **Backend (`server.py`)**: Runs the simulator loop and exposes API endpoints (`/api/state`, `/api/control`).
-    - **Frontend**: HTML/CSS/JS interface for real-time visualization of queues, phases, and wait time history.
+### Phase 2: Agent Architecture (The "Brain")
+The system uses three distinct agent types to separate concerns:
+1.  **Observer Agent (`observer_agent.py`)**: The "Eyes".
+    -   Reads raw queue data.
+    -   Flags intersections as **CRITICAL** if any queue exceeds 20 cars.
+    -   Produces a structured summary for the Controller.
+2.  **Controller Agent (`controller_agent.py`)**: The "Brain".
+    -   Receives the Observer's summary.
+    -   Applies logic:
+        -   **Switch**: If Green < 5 cars AND Red > 15 cars.
+        -   **Critical**: Prioritize CRITICAL lanes immediately.
+    -   Calls `execute_signal_change`.
+3.  **Coordinator Agent (`coordinator_agent.py`)**: The "Boss".
+    -   Runs every 5 steps.
+    -   Monitors multiple intersections.
+    -   Injects "Context Updates" (e.g., bias downstream lights) to prevent gridlock.
 
-## Key Algorithms
+### Phase 3: Orchestration & Workflow
+The `server.py` script manages the main simulation loop, ensuring a strict sequence of events:
+1.  **Start Step**: `sim.step()` adds random cars.
+2.  **Observe Step**: Observer reads state.
+3.  **Decide Step**: Controller makes decisions based on observations and Coordinator context.
+4.  **Metric Step**: State is logged for the dashboard.
 
-### Wait Time Calculation
-The simulator calculates the **Average Wait Time of Currently Queued Vehicles**.
-- For each vehicle `v` in the queue: `wait_time = current_time - v.arrival_time`.
-- `Lane Average` = `sum(wait_times) / len(queue)`.
-- `Intersection Average` = Weighted average of all lanes.
-- The `ObserverAgent` further smooths this value using a 30-second rolling average window to reduce volatility.
+### Phase 4: Observability & Evaluation
+The project includes a web-based dashboard for real-time monitoring and comparison.
+-   **Modes**:
+    -   **AI Mode**: Agents control the lights dynamically.
+    -   **Baseline Mode**: Static timer switches lights every 30 seconds.
+-   **Dashboard Features**:
+    -   **Live Visualization**: Traffic lights and queue counts for each intersection.
+    -   **Charts**: Real-time graph of "Total Cars Waiting" vs "Avg Wait Time".
+    -   **Decision Logs**: A scrolling panel showing every decision made by the agents and their reasoning.
 
-### Control Logic
-The `ControllerAgent` uses a simple heuristic:
-1.  **Min Green**: Enforce minimum green duration (5s).
-2.  **Max Green**: Enforce maximum green duration (25s).
-3.  **Switch Rule**: If `opposing_queue > current_queue + 5`, switch phase.
-4.  **Extend Rule**: If `current_queue > 10`, keep green (unless `avoid_extend` advisory is active).
+### Phase 5: Verification
+A verification script (`verify_simulation.py`) ensures the system works as expected by running the loop programmatically and checking for log generation and correct state transitions.
 
 ## How to Run
 
@@ -73,8 +69,14 @@ The `ControllerAgent` uses a simple heuristic:
     ```
 3.  Open your browser to `http://127.0.0.1:5000`.
 
-### Running Demos
-- **Basic Simulation**: `python3 demo.py`
-- **Observer Demo**: `python3 demo_observer.py`
-- **Controller Demo**: `python3 demo_controller.py`
-- **Coordinator Demo**: `python3 demo_coordinator.py`
+### Using the Dashboard
+1.  **Select Mode**: Choose "AI Mode" or "Baseline (Timer)".
+2.  **Start**: Click the Start button to begin the simulation.
+3.  **Observe**: Watch the queues, charts, and decision logs to see the difference in performance.
+
+## Key Files
+-   `traffic_simulator.py`: Core simulation logic.
+-   `server.py`: Main loop and Flask server.
+-   `observer_agent.py`, `controller_agent.py`, `coordinator_agent.py`: Agent logic.
+-   `templates/index.html`: Dashboard frontend.
+-   `static/script.js`: Dashboard logic.

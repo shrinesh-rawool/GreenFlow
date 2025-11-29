@@ -1,49 +1,34 @@
-import json
 from typing import Dict, Any, List
-from controller_agent import ControllerAgent
 
 class CoordinatorAgent:
-    def __init__(self, observer, controllers: Dict[str, ControllerAgent], graph: Dict[str, str]):
+    def __init__(self, controller):
+        self.controller = controller
+
+    def coordinate(self, observations: Dict[str, Any]):
         """
-        Args:
-            observer: ObserverAgent to subscribe to.
-            controllers: Dict of intersection_id -> ControllerAgent.
-            graph: Dict of upstream_id -> downstream_id (Simple 1-to-1 for now).
-                   Example: {'I1': 'I2'} means I1 feeds into I2.
+        Manages two different intersections (e.g., Main St. & 1st Ave).
+        Logic: If Main St. releases a huge wave of cars, the Coordinator tells 1st Ave to prepare.
         """
-        self.observer = observer
-        self.controllers = controllers
-        self.graph = graph
-        self.state_cache = {} # Stores latest state for each intersection
+        # Example Logic:
+        # If I1 (Main St) has high North Queue, tell I2 (1st Ave) to bias North?
+        # Or if I1 is congested, tell I2 to hold back?
         
-        # Subscribe to observer (we assume we can hook into it, similar to Controller)
-        # In demo, we'll manually pass messages or assume observer supports multiple callbacks.
-        # For now, we'll expose an on_state_update method.
-
-    def on_state_update(self, state_json: str):
-        """Callback received from Observer."""
-        state = json.loads(state_json)
-        self.state_cache[state['intersection_id']] = state
-        self.check_spillback()
-
-    def check_spillback(self):
-        """Checks for spillback and sends advisories."""
-        SPILLBACK_THRESHOLD = 20
+        # Let's implement the prompt's example:
+        # "If Main St. releases a huge wave of cars, the Coordinator tells 1st Ave to prepare for incoming traffic."
         
-        for upstream, downstream in self.graph.items():
-            if downstream in self.state_cache:
-                downstream_state = self.state_cache[downstream]
-                # Check total queue or specific approach queue?
-                # For simplicity, check total queue sum of downstream.
-                downstream_queue = downstream_state['queue_sum']
-                
-                if downstream_queue > SPILLBACK_THRESHOLD:
-                    # Spillback detected! Tell upstream to avoid extending green.
-                    self.send_advisory(upstream, {'avoid_extend': True})
-                else:
-                    # Clear advisory
-                    self.send_advisory(upstream, {'avoid_extend': False})
-
-    def send_advisory(self, intersection_id: str, advisory: Dict[str, Any]):
-        if intersection_id in self.controllers:
-            self.controllers[intersection_id].receive_advisory(intersection_id, advisory)
+        # Assuming I1 is Main St and I2 is 1st Ave.
+        # If I1 switches to NS_GREEN (releasing North/South traffic), and I2 is downstream...
+        
+        # For this specific task, let's implement a simple rule:
+        # If I1 North Queue > 15, tell I2 to bias 'NS' (prepare for flow).
+        
+        if 'I1' in observations:
+            i1_obs = observations['I1']
+            status = i1_obs['status']
+            
+            if status['north_queue'] > 15:
+                # Inject context to I2
+                self.controller.update_context('I2', {'bias': 'NS'})
+            else:
+                # Clear context
+                self.controller.update_context('I2', {})

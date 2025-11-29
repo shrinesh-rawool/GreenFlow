@@ -13,15 +13,21 @@ app = Flask(__name__)
 # Global State
 simulation_state = {
     "running": False,
+    "mode": "AI", # "AI" or "BASELINE"
     "step": 0,
     "intersections": {},
     "history": [],
-    "last_action": "None"
+    "logs": []
 }
 
 sim_lock = threading.Lock()
 sim_thread = None
-msg_queue = queue.Queue()
+
+# Agents & Sim
+sim = None
+observer = None
+controller = None
+coordinator = None
 
 # --- Simulation Setup ---
 def init_simulation():
@@ -29,40 +35,23 @@ def init_simulation():
     sim = TrafficSimulator()
     
     # Create Intersections
-    i1 = Intersection("I1", green_duration=10, clearance_rate=0.8, manual_control=True)
-    i2 = Intersection("I2", green_duration=10, clearance_rate=0.8, manual_control=True)
+    # Manual control is True so agents can switch lights. 
+    # In Baseline mode, we might want auto-switch or manual switch by timer.
+    i1 = Intersection("I1", green_duration=30, manual_control=True)
+    i2 = Intersection("I2", green_duration=30, manual_control=True)
     sim.add_intersection(i1)
     sim.add_intersection(i2)
     
-    # Agents
-    def thread_safe_callback(msg):
-        msg_queue.put(msg)
-        
-    observer = ObserverAgent(sim, thread_safe_callback)
-    
-    def action_callback(action):
-        simulation_state["last_action"] = f"{action['intersection_id']}: {action['action']}"
-        intersection_id = action['intersection_id']
-        for i in sim.intersections:
-            if i.intersection_id == intersection_id:
-                if action['action'] == 'SWITCH':
-                    i.switch_phase()
-                break
-
-    controller = ControllerAgent(observer, action_callback)
-    coordinator = CoordinatorAgent(
-        observer, 
-        {"I1": controller, "I2": controller}, 
-        {"I1": "I2"}
-    )
-    
-    observer.start()
+    # Initialize Agents
+    observer = ObserverAgent(sim)
+    controller = ControllerAgent(sim)
+    coordinator = CoordinatorAgent(controller)
     
     # Reset state
     simulation_state["step"] = 0
     simulation_state["intersections"] = {}
     simulation_state["history"] = []
-    simulation_state["last_action"] = "None"
+    simulation_state["logs"] = []
 
 # Initialize once
 init_simulation()
@@ -72,39 +61,64 @@ def run_simulation_loop():
     while True:
         if simulation_state["running"]:
             with sim_lock:
+                # 1. Start Step (Add random cars)
                 sim.step()
                 simulation_state["step"] = sim.current_time
                 
                 # Inject traffic (Scenario)
                 if sim.current_time % 10 == 0:
-                    sim.intersections[1].add_vehicle('N', sim.current_time)
-                    sim.intersections[1].add_vehicle('N', sim.current_time)
+                    sim.intersections[0].add_vehicle('N', sim.current_time)
+                    sim.intersections[0].add_vehicle('N', sim.current_time)
 
-            # Process Messages
-            while not msg_queue.empty():
-                msg = msg_queue.get()
-                data = json.loads(msg)
-                
-                # Update Global State
-                i_id = data['intersection_id']
-                simulation_state["intersections"][i_id] = data
-                
-                # Update History (only store I1 for simplicity in chart, or aggregate)
-                # Let's store I1's wait time
-                if i_id == "I1":
-                    simulation_state["history"].append({
-                        "step": data['timestamp'],
-                        "avg_wait": data['avg_wait']
-                    })
-                    # Limit history size
-                    if len(simulation_state["history"]) > 50:
-                        simulation_state["history"].pop(0)
-                
-                # Run Agents
-                controller.on_state_update(msg)
-                coordinator.on_state_update(msg)
-                
-        time.sleep(0.1)
+                # 2. Observe Step & 3. Decide Step
+                if simulation_state["mode"] == "AI":
+                    # Observer
+                    observations = observer.observe(sim.current_time)
+                    
+                    # Coordinator (Every 5 steps)
+                    if sim.current_time % 5 == 0:
+                        coordinator.coordinate(observations)
+                    
+                    # Controller (Decide for each intersection)
+                    for i_id, obs in observations.items():
+                        decision_data = controller.decide(obs)
+                        
+                        # Log Decision
+                        log_entry = {
+                            "step": sim.current_time,
+                            "agent": f"Controller_{i_id}",
+                            "observation": decision_data['observation'],
+                            "decision": decision_data['decision'],
+                            "reasoning": decision_data['reasoning']
+                        }
+                        simulation_state["logs"].append(log_entry)
+                        if len(simulation_state["logs"]) > 100:
+                            simulation_state["logs"].pop(0)
+
+                elif simulation_state["mode"] == "BASELINE":
+                    # Static Timer Logic
+                    # Switch every 30 seconds
+                    for intersection in sim.intersections:
+                        # We used manual_control=True, so we must switch manually
+                        if intersection.phase_timer >= 30:
+                            intersection.switch_light()
+                            
+                # 4. Metric Step (Update State for UI)
+                for intersection in sim.intersections:
+                    state = intersection.get_state(sim.current_time)
+                    simulation_state["intersections"][intersection.intersection_id] = state
+                    
+                    # History for Chart (I1 only for simplicity)
+                    if intersection.intersection_id == "I1":
+                        simulation_state["history"].append({
+                            "step": sim.current_time,
+                            "avg_wait": state['avg_waiting_time'],
+                            "total_queue": sum(state['queues'].values())
+                        })
+                        if len(simulation_state["history"]) > 100:
+                            simulation_state["history"].pop(0)
+                            
+        time.sleep(0.1) # 10 steps per second max
 
 # Start Background Thread
 sim_thread = threading.Thread(target=run_simulation_loop, daemon=True)
@@ -121,20 +135,24 @@ def get_state():
 
 @app.route('/api/control', methods=['POST'])
 def control():
-    action = request.json.get('action')
+    data = request.json
+    action = data.get('action')
+    
     if action == 'start':
         simulation_state["running"] = True
     elif action == 'stop':
         simulation_state["running"] = False
     elif action == 'reset':
         with sim_lock:
-            # Stop old observer? Ideally yes, but for simplicity we just re-init
-            if observer:
-                observer.stop()
             init_simulation()
             simulation_state["running"] = False
+    elif action == 'set_mode':
+        mode = data.get('mode')
+        if mode in ['AI', 'BASELINE']:
+            simulation_state["mode"] = mode
+            # Reset on mode change? Maybe better to let user reset.
             
-    return jsonify({"status": "ok", "running": simulation_state["running"]})
+    return jsonify({"status": "ok", "running": simulation_state["running"], "mode": simulation_state["mode"]})
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000, use_reloader=False)

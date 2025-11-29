@@ -78,7 +78,8 @@ header {
 }
 
 .traffic-light.EW_GREEN {
-    border: 5px solid var(--accent-color); /* Using blue for EW to distinguish */
+    border: 5px solid var(--accent-color);
+    /* Using blue for EW to distinguish */
     color: var(--accent-color);
 }
 
@@ -101,8 +102,65 @@ header {
     gap: 20px;
 }
 
-.chart-container, .info-panel {
+.chart-container,
+.logs-panel {
     background-color: var(--card-bg);
     padding: 20px;
     border-radius: 8px;
+}
+
+.logs-container {
+    max-height: 300px;
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.log-entry {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.log-step {
+    color: #888;
+}
+
+.log-agent {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.log-decision.SWITCH {
+    color: var(--green-light);
+}
+
+.log-decision.HOLD {
+    color: #f1c40f;
+}
+
+.log-reason {
+    color: #aaa;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+.mode-selector button {
+    background-color: #444;
+    color: #aaa;
+    border: 1px solid #555;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.mode-selector button.active {
+    background-color: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
